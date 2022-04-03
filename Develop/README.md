@@ -1,6 +1,6 @@
-# Readme Generator undefined
+# README Generator undefined
    ## Description
-   a file that provides information about the project
+   A file that provides information about a project
     ## Table of Contents
   -[Installation](#installation)
 
@@ -15,17 +15,17 @@
   -[Questions](#questions)
 
     ## Installation
-    yes
+    none
     ## Usage
-    everyone
+    Everyone
     ## License
     MIT
 undefined
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT) in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
     ## Credits
-    ashley lawrence
+    Ashley Lawrence
     ## Tests
-    none
+    None
     ## Questions
     Email: ashdmt39@gmail.com
 
