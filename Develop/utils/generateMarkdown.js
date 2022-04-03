@@ -31,7 +31,21 @@ function renderLicenseLink(myBadge) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(myBadge) {
+  for (let i = 0; i < badge.length; i++) {
+    if (myBadge.license == badge[i].name) {
+      return (
+        renderLicenseBadge(myBadge) +
+        "\n" +
+        renderLicenseLink(myBadge) +
+        "\n" +
+        badge[i].desc
+      );
+    } else {
+      return "none";
+    }
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
