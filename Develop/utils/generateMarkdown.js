@@ -22,7 +22,7 @@ function renderLicenseBadge(myBadge) {
 function renderLicenseLink(myBadge) {
   for (let i = 0; i < badge.length; i++) {
     if (myBadge.license == badge[i].name) {
-      return myBadge.link;
+      return badge[i].link;
     } else {
       return "none";
     }
@@ -50,26 +50,26 @@ function renderLicenseSection(myBadge) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseLink(data)}
-   ## Description
-   ${data.description}
-    ## Table of Contents
+## Description
+     ${data.description}
+## Table of Contents
   -[Installation](#installation)\n
   -[Usage](#usage)\n
   -[License](#license)\n
   -[Credits](#credits)\n
   -[Tests](#tests)\n
   -[Questions](#questions)\n
-    ## Installation
+## Installation
     ${data.install}
-    ## Usage
+## Usage
     ${data.usage}
-    ## License
+## License
     ${renderLicenseSection(data)}
-    ## Credits
+## Credits
     ${data.credits}
-    ## Tests
+## Tests
     ${data.tests}
-    ## Questions
+## Questions
     Email: ${data.questions}\n
     [GitHub User ${data.gitHub}:](https://github.com/${data.gitHub})
 
